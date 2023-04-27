@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #3c3a39;
+  padding: 20px;
+}
+
+.navbar-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-link {
+  display: none;
+}
+
+.menu {
+  width: 30px;
+  filter: invert(100%);
+}
+
+.headline-section {
+  background-color: #131110;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline-section-wrapper {
+  padding: 10px;
+}
+
+.headline-title {
+  color: #f55800;
+  font-size: 50px;
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+}
+
+.headline-professional {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.headline-description {
+  color: #f4f5f7;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 20px;
+}
+
+.headline-illustration {
+  position: absolute;
+  right: -280;
+  bottom: 0;
+  rotate: -17deg;
+}
+
+.headline-links {
+  display: flex;
+  align-items: center;
+}
+
+.headline-links li {
+  list-style-type: none;
+}
+
+.headline-link {
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 20px 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-link {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+  }
+
+  .headline-section {
+    justify-content: flex-start;
+  }
+
+  .headline-section-wrapper {
+    width: 50%;
+    padding-left: 20px;
+  }
+
+  .headline-title {
+    font-size: 72px;
+  }
+
+  .headline-professional {
+    font-size: 32px;
+  }
+
+  .headline-illustration {
+    right: -150px;
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1008px) {
+  .navbar {
+    padding: 10px 100px;
+  }
+
+  .headline-section-wrapper {
+    padding-left: 100px;
+  }
+}
