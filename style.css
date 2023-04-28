@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #3c3a39;
+  padding: 20px;
+}
+
+.navbar-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-link {
+  display: none;
+}
+
+.menu {
+  width: 30px;
+  filter: invert(100%);
+}
+
+.headline-section {
+  background-color: #131110;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-position: right bottom;
+  background-image: url(images/illustration-header-mobile.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.headline-section-wrapper {
+  padding: 20px;
+}
+
+.headline-title {
+  color: #f55800;
+  font-size: 50px;
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+}
+
+.headline-professional {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.headline-description {
+  color: #f4f5f7;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 16px;
+  margin-right: 65px;
+}
+
+.headline-links {
+  display: flex;
+  align-items: center;
+}
+
+.headline-links li {
+  list-style-type: none;
+}
+
+.headline-link {
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 20px 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-link {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+  }
+
+  .headline-section {
+    justify-content: flex-start;
+    background-image: url(images/illustration-header.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+  }
+
+  .headline-section-wrapper {
+    width: 50%;
+    padding-left: 20px;
+  }
+
+  .headline-title {
+    font-size: 72px;
+  }
+
+  .headline-professional {
+    font-size: 32px;
+  }
+
+  .headline-description {
+    color: #f4f5f7;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 32px;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  @media only screen and (min-width: 1008px) {
+    .navbar {
+      padding: 10px 100px;
+    }
+
+    .headline-section-wrapper {
+      padding-left: 100px;
+    }
+  }
+}
