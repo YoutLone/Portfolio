@@ -214,9 +214,10 @@
 .other-project-tag {
   font-family: "Inter", sans-serif;
   color: white;
-  margin: 0 10px 20px 20px;
+  margin: 5px 0 20px 15px;
   font-size: 15px;
-  background-color: #5c5c69;
+  line-height: 20px;
+  background: rgba(255, 255, 255, 0.24);
   padding: 10px;
 }
 
@@ -253,14 +254,14 @@
 .about-me-section {
   margin-top: 100px;
   width: 100%;
+  height: 1500px;
   background-color: #1c1a19;
-  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   padding: 50px 0;
   overflow: hidden;
-  background-position: right bottom;
+  background-position: 100% 8%;
   background-image: url(images/illustration-about-me-mobile.png);
   background-repeat: no-repeat;
 }
@@ -348,6 +349,7 @@
   flex-direction: column;
   align-items: center;
   list-style-type: none;
+  padding-top: 40px;
 }
 
 .skill-title-wrapper {
@@ -365,6 +367,7 @@
   font-weight: 400;
   font-size: 22px;
   margin-top: 10px;
+  padding-top: 25px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -477,16 +480,29 @@
   }
 
   .about-me-section {
-    justify-content: flex-start;
     background-image: url(images/illustration-aboutme.svg);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 800px 15px;
+    background-position: 100% 0%;
+    margin-top: 100px;
+    width: 100%;
+    height: 1000px;
+    background-color: #1c1a19;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    overflow: hidden;
   }
 
   .about-me-text-wrapper {
-    padding-left: 20px;
     width: 50%;
+    margin-left: -132px;
+  }
+
+  .about-me-line {
+    width: 100%;
+    height: 2px;
+    margin: 100px -105px;
+    background-color: #5c5c69;
   }
 
   .about-me-illustration {
@@ -496,6 +512,7 @@
 
   .skills-wrapper {
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 30px 50px -180px;
   }
 }
 
