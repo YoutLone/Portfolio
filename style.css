@@ -47,7 +47,6 @@
   background-position: right bottom;
   background-image: url(images/illustration-header-mobile.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .headline-section-wrapper {
@@ -91,6 +90,286 @@
   margin-right: 10px;
 }
 
+.works-title {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  color: #1c1a19;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.works-title-line {
+  width: 90%;
+  height: 2px;
+  background-color: #c7c7c7;
+  margin: 50px auto;
+}
+
+.works-wrapper {
+  width: 100%;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr;
+}
+
+.main-project-wrapper {
+  width: 325px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.main-project-img {
+  width: 325px;
+  margin: 0 auto;
+}
+
+.main-project-title {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #091e42;
+  margin: 25px 0;
+}
+
+.main-project-description {
+  font-family: "Inter", sans-serif;
+  color: #091e42;
+}
+
+.main-project-tags {
+  display: flex;
+  margin: 10px 0;
+  list-style-type: none;
+}
+
+.main-project-tag {
+  font-family: "Inter", sans-serif;
+  color: #091e42;
+  margin: 10px 0;
+  margin-right: 10px;
+  font-size: 15px;
+  border: 1px solid #8993a4;
+  padding: 10px;
+}
+
+.see-project-btn {
+  background-color: #ff6b00;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.see-project-btn:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+.see-project-btn:focus {
+  background-color: #ff6b00;
+  color: white;
+}
+
+.see-project-btn:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+.other-project-wrapper {
+  width: 325px;
+  height: 300px;
+  margin: 0 auto;
+  background-image: url("images/other-projects.png");
+  display: flex;
+  align-items: flex-end;
+}
+
+.other-project-title {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: white;
+  margin: 0 0 20px 20px;
+}
+
+.other-project-description {
+  font-family: "Inter", sans-serif;
+  color: white;
+  margin: 0 0 20px 20px;
+}
+
+.other-project-tags {
+  display: flex;
+  list-style-type: none;
+}
+
+.other-project-tag {
+  font-family: "Inter", sans-serif;
+  color: white;
+  margin: 5px 0 20px 15px;
+  font-size: 15px;
+  line-height: 20px;
+  background: rgba(255, 255, 255, 0.24);
+  padding: 10px;
+}
+
+.other-project-see-project-btn {
+  background-color: #ff6b00;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.other-project-see-project-btn:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+.other-project-see-project-btn:focus {
+  background-color: #ff6b00;
+  color: white;
+}
+
+.other-project-see-project-btn:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+.about-me-section {
+  margin-top: 100px;
+  width: 100%;
+  height: 1500px;
+  background-color: #1c1a19;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 50px 0;
+  overflow: hidden;
+  background-position: 100% 8%;
+  background-image: url(images/illustration-about-me-mobile.png);
+  background-repeat: no-repeat;
+}
+
+.about-me-title {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 72px;
+  color: #ff6b00;
+  margin: 0 0 20px 20px;
+}
+
+.about-me-description {
+  color: white;
+  font-family: "inter", sans-serif;
+  font-size: 18px;
+  padding: 0 20px;
+  margin-right: 60px;
+}
+
+.get-my-resume-btn {
+  background-color: #ff6b00;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  margin: 20px 20px;
+  display: block;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.get-my-resume-btn:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+.get-my-resume-btn:focus {
+  background-color: #ff6b00;
+  color: white;
+}
+
+.get-my-resume-btn:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+.about-me-illustration {
+  position: absolute;
+  right: -200;
+  bottom: 0;
+  width: 300px;
+}
+
+.skills-section {
+  width: 100%;
+  background-color: #1c1a19;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about-me-line {
+  width: 80%;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #5c5c69;
+}
+
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: "inter", sans-serif;
+  font-size: 32px;
+  color: white;
+  list-style-type: none;
+}
+
+.skill-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding-top: 40px;
+}
+
+.skill-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.skill-title-svg {
+  margin-right: 10px;
+}
+
+.skill {
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 10px;
+  padding-top: 25px;
+}
+
 @media only screen and (min-width: 768px) {
   .navbar {
     padding: 20px 20px;
@@ -118,7 +397,6 @@
     justify-content: flex-start;
     background-image: url(images/illustration-header.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: contain;
   }
 
@@ -144,13 +422,118 @@
     margin-left: 5px;
   }
 
-  @media only screen and (min-width: 1008px) {
-    .navbar {
-      padding: 10px 100px;
-    }
+  .works-section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
-    .headline-section-wrapper {
-      padding-left: 100px;
-    }
+  .works-title-wrapper {
+    display: flex;
+    margin: 20px 0;
+  }
+
+  .works-title-line {
+    width: 70%;
+    margin: auto;
+  }
+
+  .works-title {
+    font-size: 40px;
+    margin: auto;
+  }
+
+  .works-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+  }
+
+  .main-project-wrapper {
+    grid-column: 1 / span 2;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-project-img {
+    width: 484px;
+  }
+
+  .main-project-title {
+    font-size: 40px;
+    margin: 0 0 0 20px;
+  }
+
+  .main-project-description {
+    font-size: 18px;
+    margin: 0 0 0 20px;
+  }
+
+  .main-project-tags {
+    margin: 20px 0 0 20px;
+  }
+
+  .see-project-btn {
+    display: inline-block;
+    margin: 20px 0 0 20px;
+  }
+
+  .about-me-section {
+    background-image: url(images/illustration-aboutme.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    margin-top: 100px;
+    width: 100%;
+    height: 1000px;
+    background-color: #1c1a19;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    overflow: hidden;
+  }
+
+  .about-me-text-wrapper {
+    width: 50%;
+    margin-left: -132px;
+  }
+
+  .about-me-line {
+    width: 100%;
+    height: 2px;
+    margin: 100px -105px;
+    background-color: #5c5c69;
+  }
+
+  .about-me-illustration {
+    right: -150px;
+    width: 600px;
+  }
+
+  .skills-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 30px 50px -180px;
+  }
+}
+
+@media only screen and (min-width: 1008px) {
+  .navbar {
+    padding: 10px 100px;
+  }
+
+  .headline-section-wrapper {
+    padding-left: 100px;
+  }
+
+  .works-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .main-project-wrapper {
+    grid-column: 1 / span 3;
+  }
+
+  .about-me-section {
+    padding-left: 200px;
   }
 }
