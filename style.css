@@ -660,7 +660,7 @@ input[type=submit]:disabled {
   .form-description {
     display: inline-block;
     text-align: left;
-    margin: 0 100px 0 120px;
+    margin: 0 110px 0 120px;
   }
 
   .contact-form {
