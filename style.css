@@ -497,7 +497,7 @@ input[type=submit]:disabled {
 .footer-line {
   width: 40%;
   height: 5px;
-  margin: 10px auto;
+  margin: 20px auto;
   background-color: #0d151e;
   left: 0;
   right: 0;
