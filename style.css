@@ -389,10 +389,6 @@
   margin: 0 23px 0 25px;
 }
 
-.contact-form {
-  margin-top: 40px;
-}
-
 input[type=text] {
   width: 87%;
   margin: 20px 23px 20px 25px;
@@ -657,7 +653,11 @@ input[type=submit]:disabled {
   }
 
   .form-section {
-    margin-top: 40px;
+    margin-top: 130px;
+  }
+
+  .form-section-wrapper {
+    display: flex;
   }
 
   .form-description {
@@ -667,6 +667,7 @@ input[type=submit]:disabled {
   }
 
   .contact-form {
+
     display: inline-block;
   }
 
