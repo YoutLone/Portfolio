@@ -395,6 +395,7 @@
 input[type=text] {
   width: 87%;
   margin: 20px 23px 20px 25px;
+  padding-left: 16px;
   border: none;
   border-bottom: 2px solid  #dbd8d7;
   font-family: 'Inter', sans-serif;
@@ -408,6 +409,7 @@ input[type=text] {
 input[type=email] {
   width: 87%;
   margin: 0 23px 0 25px;
+  padding-left: 16px;
   border: none;
   border-bottom: 2px solid  #dbd8d7;
   font-family: 'Inter', sans-serif;
@@ -432,6 +434,7 @@ textarea {
   color: #3c3a39;
   background: #fbf8f7;
   margin: 10px 23px 0 25px;
+  padding-left: 16px;
 }
 
 input[type=submit] {
