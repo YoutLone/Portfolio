@@ -650,11 +650,7 @@ input[type=submit]:disabled {
   }
 
   .form-section {
-    <<<<<<< HEAD
-    display: flex;
-    =======
-    margin-top: 130px;margin-top
->>>>>>> 3d2171e741bc1d1475ede532a01428dd829909b0
+    margin-top: 130px;
   }
 
   .form-section-wrapper {
@@ -662,16 +658,13 @@ input[type=submit]:disabled {
   }
 
   .form-description {
+    display: inline-block;
     text-align: left;
-    <<<<<<< HEAD
-    margin: 40px 135px 300px 90px;
-    =======
-    margin: 0 100px 0 120px;margin
+    margin: 0 100px 0 120px;
   }
 
   .contact-form {
     display: inline-block;
->>>>>>> 3d2171e741bc1d1475ede532a01428dd829909b0
   }
 
   input[type=text],
@@ -692,10 +685,8 @@ input[type=submit]:disabled {
   }
 
   .footer-links {
-    display: flex;
-    align-items: center;
-    margin-left: 600px;
-    margin-top: 50px;
+    margin-left: 550px;
+    margin-top: 40px;
   }
 
   .footer-line {
