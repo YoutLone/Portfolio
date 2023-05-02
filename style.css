@@ -508,9 +508,6 @@ input[type=submit]:disabled {
   top: 0px;
 }
 
-
-
-
 @media only screen and (min-width: 768px) {
   .navbar {
     padding: 20px 20px;
@@ -657,17 +654,16 @@ input[type=submit]:disabled {
   }
 
   .form-section {
-    margin-top: 40px;
+    display: flex;
+  }
+
+  .form-section-wrapper {
+    display: flex;
   }
 
   .form-description {
-    display: inline-block;
     text-align: left;
-    margin: 0 100px 0 120px;
-  }
-
-  .contact-form {
-    display: inline-block;
+    margin: 40px 135px 300px 90px;
   }
 
   input[type=text],
@@ -685,6 +681,17 @@ input[type=submit]:disabled {
   input[type=submit] {
     margin-left: -60px;
     margin-right: 420px;
+  }
+
+  .footer-links {
+    display: flex;
+    align-items: center;
+    margin-left: 600px;
+    margin-top: 50px;
+  }
+    
+  .footer-line{
+    display: none;
   }
 
 }
