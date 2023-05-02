@@ -666,8 +666,7 @@ input[type=submit]:disabled {
     margin: 0 100px 0 120px;
   }
 
-  .contact-form {
-
+  .contact-form { 
     display: inline-block;
   }
 
