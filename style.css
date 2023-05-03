@@ -47,7 +47,6 @@
   background-position: right bottom;
   background-image: url(images/illustration-header-mobile.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .headline-section-wrapper {
@@ -91,6 +90,361 @@
   margin-right: 10px;
 }
 
+.works-title {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  color: #1c1a19;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.works-title-line {
+  width: 90%;
+  height: 2px;
+  background-color: #c7c7c7;
+  margin: 50px auto;
+}
+
+.works-wrapper {
+  width: 100%;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr;
+}
+
+.main-project-wrapper {
+  width: 325px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.main-project-img {
+  width: 325px;
+  margin: 0 auto;
+}
+
+.main-project-title {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #091e42;
+  margin: 25px 0;
+}
+
+.main-project-description {
+  font-family: "Inter", sans-serif;
+  color: #091e42;
+}
+
+.main-project-tags {
+  display: flex;
+  margin: 10px 0;
+  list-style-type: none;
+}
+
+.main-project-tag {
+  font-family: "Inter", sans-serif;
+  color: #091e42;
+  margin: 10px 0;
+  margin-right: 10px;
+  font-size: 15px;
+  border: 1px solid #8993a4;
+  padding: 10px;
+}
+
+.see-project-btn {
+  background-color: #ff6b00;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.see-project-btn:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+.see-project-btn:focus {
+  background-color: #ff6b00;
+  color: white;
+}
+
+.see-project-btn:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+.other-project-wrapper {
+  width: 325px;
+  height: 300px;
+  margin: 0 auto;
+  background-image: url("images/other-projects.png");
+  display: flex;
+  align-items: flex-end;
+}
+
+.about-me-section {
+  margin-top: 100px;
+  width: 100%;
+  height: 1500px;
+  background-color: #1c1a19;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 50px 0;
+  overflow: hidden;
+  background-position: 100% 8%;
+  background-image: url(images/illustration-about-me-mobile.png);
+  background-repeat: no-repeat;
+}
+
+.about-me-title {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 72px;
+  color: #ff6b00;
+  margin: 0 0 20px 20px;
+}
+
+.about-me-description {
+  color: white;
+  font-family: "inter", sans-serif;
+  font-size: 18px;
+  padding: 0 20px;
+  margin-right: 60px;
+}
+
+.get-my-resume-btn {
+  background-color: #ff6b00;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  margin: 20px 20px;
+  display: block;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.get-my-resume-btn:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+.get-my-resume-btn:focus {
+  background-color: #ff6b00;
+  color: white;
+}
+
+.get-my-resume-btn:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+.about-me-illustration {
+  position: absolute;
+  right: -200;
+  bottom: 0;
+  width: 300px;
+}
+
+.skills-section {
+  width: 100%;
+  background-color: #1c1a19;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about-me-line {
+  width: 80%;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #5c5c69;
+}
+
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: "inter", sans-serif;
+  font-size: 32px;
+  color: white;
+  list-style-type: none;
+}
+
+.skill-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding-top: 40px;
+}
+
+.skill-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.skill-title-svg {
+  margin-right: 10px;
+}
+
+.skill {
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 10px;
+  padding-top: 25px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  width: 100%;
+  background-color: white;
+}
+
+.form-description {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  margin: 0 23px 0 25px;
+}
+
+input[type=text] {
+  width: 87%;
+  margin: 20px 23px 20px 25px;
+  padding-left: 16px;
+  border: none;
+  border-bottom: 2px solid  #dbd8d7;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 44px;
+  color: #979493;
+}
+
+input[type=email] {
+  width: 87%;
+  margin: 0 23px 0 25px;
+  padding-left: 16px;
+  border: none;
+  border-bottom: 2px solid  #dbd8d7;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 44px;
+  color: #979493;
+}
+
+textarea {
+  width: 87%;
+  height: 100px;
+  padding: 12px 12px;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+  background: #fbf8f7;
+  margin: 10px 23px 0 25px;
+  padding-left: 16px;
+}
+
+input[type=submit] {
+  margin: 0 155px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  cursor: pointer;
+  background: #ff6b00;
+  padding: 12px;
+}
+
+input[type=submit]:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+input[type=submit]:focus {
+  background-color: #ff6b00;
+  color: white;
+}
+
+input[type=submit]:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+.footer-section {
+  height: 60px;
+}
+
+#footer-section-wrapper {
+  margin-top: 25px;
+  margin-bottom: 47px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  margin-left: 120px;
+}
+
+.footer-links li {
+  list-style-type: none;
+}
+
+.footer-link {
+  margin: 0 10px 20px 5px;
+}
+
+.form-line {
+  width: 100%;
+  height: 1px;
+  margin-top: 90px;
+  background-color: #dfe1e6;
+}
+
+.footer-line {
+  width: 40%;
+  height: 5px;
+  margin: 10px auto;
+  background-color: #0d151e;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
 @media only screen and (min-width: 768px) {
   .navbar {
     padding: 20px 20px;
@@ -118,13 +472,13 @@
     justify-content: flex-start;
     background-image: url(images/illustration-header.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: contain;
   }
 
   .headline-section-wrapper {
+    display: flex;
+    flex-direction: row;
     width: 50%;
-    padding-left: 20px;
   }
 
   .headline-title {
@@ -144,13 +498,374 @@
     margin-left: 5px;
   }
 
-  @media only screen and (min-width: 1008px) {
-    .navbar {
-      padding: 10px 100px;
-    }
+  .headline-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+    margin-right: 55px;
+    margin-left: -75px;
+  }
 
-    .headline-section-wrapper {
-      padding-left: 100px;
-    }
+  .headline-link-img {
+    margin-top: 10px;
+  }
+
+  .works-section {
+    max-width: 1100px;
+    margin: 100px auto;
+  }
+
+  .works-title-wrapper {
+    display: flex;
+    margin: 20px 0;
+  }
+
+  .works-title-line {
+    width: 68%;
+    margin: auto;
+    margin-right: -20px;
+  }
+
+  .works-title {
+    font-size: 40px;
+    margin: auto;
+    margin-left: 5px;
+  }
+
+  .works-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+  }
+
+  .main-project-wrapper {
+    grid-column: 1 / span 2;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-project-img {
+    margin-top: 80px;
+    margin-left: 5px;
+    width: 600px;
+    height: 450px;
+  }
+
+  .main-project-title {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    align-items: center;
+    color: #091e42;
+    margin: 80px 0 0 20px;
+  }
+
+  .main-project-description {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    width: 550px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #091e42;
+    margin: 20px 40px 0 20px;
+  }
+
+  .main-project-tags {
+    margin: 20px 0 0 20px;
+  }
+
+  .art-printing-wrapper {
+    display: flex;
+    align-items: flex-end;
+    background-image: url("images/art-printing.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 3px solid lightskyblue;
+    height: 400px;
+    width: 360px;
+    margin-left: 5px;
+    margin-top: -24px;
+  }
+
+  .art-printing-see-project-btn {
+    background-color: #ff6b00;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    width: 354px;
+    display: flex;
+    text-align: center;
+    padding: 20px 125px;
+  }
+
+  .art-printing-see-project-btn:hover {
+    background-color: #fff5e1;
+    color: #ff6b00;
+  }
+
+  .art-printing-see-project-btn:focus {
+    background-color: #ff6b00;
+    color: white;
+  }
+
+  .art-printing-see-project-btn:disabled {
+    background-color: #f4f1f0;
+    color: #5b5957;
+  }
+
+  .data-healthcare-wrapper {
+    background-image: url("images/data-healthcare.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+    width: 360px;
+    margin-left: -30px;
+    margin-top: -24px;
+  }
+
+  .data-healthcare-title {
+    font-family: "Crete Round", serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+    margin: 160px 0 20px 20px;
+  }
+
+  .data-healthcare-description {
+    font-family: "Inter", sans-serif;
+    color: white;
+    margin: 0 0 20px 20px;
+  }
+
+  .data-healthcare-tags {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .data-healthcare-tag {
+    font-family: "Inter", sans-serif;
+    color: white;
+    margin: 5px 0 20px 15px;
+    font-size: 15px;
+    line-height: 20px;
+    background: rgba(255, 255, 255, 0.24);
+    padding: 10px;
+  }
+
+  .web-portfolio-wrapper {
+    background-image: url("images/web-portfolio.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+    width: 360px;
+    margin-left: -30px;
+    margin-top: -24px;
+  }
+
+  .web-portfolio-title {
+    font-family: "Crete Round", serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+    margin: 200px 0 20px 20px;
+  }
+
+  .web-portfolio-description {
+    font-family: "Inter", sans-serif;
+    color: white;
+    margin: 0 0 20px 20px;
+  }
+
+  .web-portfolio-tags {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .web-portfolio-tag {
+    font-family: "Inter", sans-serif;
+    color: white;
+    margin: 5px 0 20px 15px;
+    font-size: 15px;
+    line-height: 20px;
+    background: rgba(255, 255, 255, 0.24);
+    padding: 10px;
+  }
+
+  .data-printing-wrapper {
+    background-image: url("images/data-printing.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+    width: 360px;
+    margin-left: 5px;
+    margin-top: -24px;
+  }
+
+  .data-printing-title {
+    font-family: "Crete Round", serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+    margin: 160px 0 20px 20px;
+  }
+
+  .data-printing-description {
+    font-family: "Inter", sans-serif;
+    color: white;
+    margin: 0 0 20px 20px;
+  }
+
+  .data-printing-tags {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .data-printing-tag {
+    font-family: "Inter", sans-serif;
+    color: white;
+    margin: 5px 0 20px 15px;
+    font-size: 15px;
+    line-height: 20px;
+    background: rgba(255, 255, 255, 0.24);
+    padding: 10px;
+  }
+
+  .see-project-btn {
+    margin: 20px 0 0 20px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    width: 130px;
+    padding: 12px;
+  }
+
+  .about-me-section {
+    background-image: url(images/illustration-aboutme.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    margin-top: 100px;
+    width: 100%;
+    height: 1000px;
+    background-color: #1c1a19;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    overflow: hidden;
+  }
+
+  .about-me-text-wrapper {
+    width: 50%;
+    margin-left: -132px;
+  }
+
+  .about-me-line {
+    width: 100%;
+    height: 2px;
+    margin: 100px -105px;
+    background-color: #5c5c69;
+  }
+
+  .about-me-illustration {
+    right: -150px;
+    width: 600px;
+  }
+
+  .skills-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 30px 50px -180px;
+  }
+
+  .form-section {
+    margin-top: 130px;
+  }
+
+  .form-section-wrapper {
+    display: flex;
+  }
+
+  .form-description {
+    display: inline-block;
+    text-align: left;
+    margin: 0 100px 0 120px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    align-items: center;
+    color: #262626;
+  }
+
+  .contact-form {
+    display: inline-block;
+  }
+
+  input[type=text],
+  input[type=email] {
+    line-height: 20px;
+    width: 140%;
+    margin-left: -60px;
+  }
+
+  textarea {
+    width: 140%;
+    margin-left: -60px;
+  }
+
+  input[type=submit] {
+    margin-left: -60px;
+    margin-right: 420px;
+  }
+
+  .form-line {
+    margin-top: 180px;
+    margin-bottom: -30px;
+  }
+
+  .footer-links {
+    margin-left: 560px;
+    margin-top: 50px;
+  }
+
+  .footer-line {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1008px) {
+  .navbar {
+    padding: 10px 100px;
+  }
+
+  .headline-section-wrapper {
+    padding-left: 100px;
+  }
+
+  .works-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .main-project-wrapper {
+    grid-column: 1 / span 3;
+  }
+
+  .about-me-section {
+    padding-left: 200px;
   }
 }
