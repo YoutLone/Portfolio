@@ -65,7 +65,7 @@
 
 > Added a link to my deployed project.
 
-- [Live Demo Link](https://raw.githack.com/YoutLone/Portfolio/htmlcss-branch/index.html)
+- [Live Demo Link](https://raw.githack.com/YoutLone/Portfolio/desktop-version-branch/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
