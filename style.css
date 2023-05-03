@@ -497,11 +497,8 @@ input[type=submit]:disabled {
 .footer-line {
   width: 40%;
   height: 5px;
-  margin: 10px auto;
+  margin: 20px auto;
   background-color: #0d151e;
-  left: 0;
-  right: 0;
-  top: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -682,6 +679,10 @@ input[type=submit]:disabled {
   input[type=submit] {
     margin-left: -60px;
     margin-right: 420px;
+  }
+
+  .footer-sectin {
+    height: 15px;
   }
 
   .footer-links {
