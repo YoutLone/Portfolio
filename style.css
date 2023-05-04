@@ -513,6 +513,7 @@
 .get-my-resume-btn:hover {
   background-color: #fff5e1;
   color: #ff6b00;
+  transition: all 0.4s ease-in 0s;
 }
 
 .get-my-resume-btn:focus {
@@ -776,6 +777,10 @@ input[type=submit]:disabled {
 
   .headline-link-img {
     margin-top: 10px;
+  }
+  
+  .headline-link-img:hover {
+    transform: scale(2);
   }
 
   .works-section {
@@ -1175,16 +1180,19 @@ input[type=submit]:disabled {
   .footer-line {
     display: none;
   }
+  .footer-link-img:hover {
+    transform: scale(2);
+  }
 
   @keyframes rotation {
     from {
       transform: rotate(0deg);
-      color: white;
+      color: lightcyan;
     }
 
     to {
       transform: rotate(360deg);
-      color: blue;
+      color: white;
     }
   }
 }
