@@ -25,8 +25,6 @@
   animation: 3s infinite  rotation 0s;
 }
 
-
-
 .nav-links {
   list-style-type: none;
 }
@@ -778,7 +776,7 @@ input[type=submit]:disabled {
   .headline-link-img {
     margin-top: 10px;
   }
-  
+
   .headline-link-img:hover {
     transform: scale(2);
   }
@@ -830,7 +828,6 @@ input[type=submit]:disabled {
     translate: -30px;
     transform: scale(1.1);
     transition: all 0.4s ease-in 0s;
-    
   }
 
   .main-project-title {
@@ -877,7 +874,6 @@ input[type=submit]:disabled {
     transform: scale(1.2);
     transition: all 0.4s ease-in 0s;
   }
-  
 
   .art-printing-title {
     display: none;
@@ -1139,13 +1135,6 @@ input[type=submit]:disabled {
     transition: all 0.4s ease-in-out 0s;
   }
 
-  form textarea:hover {
-    padding-left: 30px;
-    transition: all 0.4s ease-in-out 0s;
-  }
-
-  
-
   input[type=text],
   input[type=email] {
     line-height: 20px;
@@ -1156,6 +1145,11 @@ input[type=submit]:disabled {
   textarea {
     width: 140%;
     margin-left: -60px;
+  }
+
+  form textarea:hover {
+    padding-left: 30px;
+    transition: all 0.4s ease-in-out 0s;
   }
 
   input[type=submit] {
@@ -1180,6 +1174,7 @@ input[type=submit]:disabled {
   .footer-line {
     display: none;
   }
+
   .footer-link-img:hover {
     transform: scale(2);
   }
