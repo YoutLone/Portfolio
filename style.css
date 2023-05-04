@@ -20,6 +20,7 @@
   text-decoration: none;
   font-size: 20px;
   color: white;
+  margin-left: 45px;
   font-family: "Inter", sans-serif;
 }
 
@@ -50,6 +51,8 @@
 }
 
 .headline-section-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
   padding: 20px;
 }
 
@@ -183,13 +186,276 @@
   color: #5b5957;
 }
 
-.other-project-wrapper {
+.art-printing-wrapper {
+  width: 325px;
+  height: 300px;
+  margin: -70px auto 0 auto;
+  background-image: url("images/other-projects.png");
+  display: flex;
+  align-items: flex-end;
+}
+
+.art-printing-title {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: white;
+  margin: 0 0 20px 20px;
+}
+
+.art-printing-description {
+  font-family: "Inter", sans-serif;
+  color: white;
+  margin: 0 0 20px 20px;
+}
+
+.art-printing-tags {
+  display: flex;
+  list-style-type: none;
+}
+
+.art-printing-tag {
+  font-family: "Inter", sans-serif;
+  color: white;
+  margin: 5px 0 20px 15px;
+  font-size: 15px;
+  line-height: 20px;
+  background: rgba(255, 255, 255, 0.24);
+  padding: 10px;
+}
+
+.data-healthcare-wrapper {
   width: 325px;
   height: 300px;
   margin: 0 auto;
   background-image: url("images/other-projects.png");
   display: flex;
   align-items: flex-end;
+}
+
+.data-healthcare-title {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: white;
+  margin: 0 0 20px 20px;
+}
+
+.data-healthcare-description {
+  font-family: "Inter", sans-serif;
+  color: white;
+  margin: 0 0 20px 20px;
+}
+
+.data-healthcare-tags {
+  display: flex;
+  list-style-type: none;
+}
+
+.data-healthcare-tag {
+  font-family: "Inter", sans-serif;
+  color: white;
+  margin: 5px 0 20px 15px;
+  font-size: 15px;
+  line-height: 20px;
+  background: rgba(255, 255, 255, 0.24);
+  padding: 10px;
+}
+
+.other-project-see-project-btn {
+  background-color: #ff6b00;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.other-project-see-project-btn:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+.other-project-see-project-btn:focus {
+  background-color: #ff6b00;
+  color: white;
+}
+
+.other-project-see-project-btn:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+.art-printing-see-project-btn {
+  background-color: #ff6b00;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.art-printing-see-project-btn:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+.art-printing-see-project-btn:focus {
+  background-color: #ff6b00;
+  color: white;
+}
+
+.art-printing-see-project-btn:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+.web-portfolio-wrapper {
+  width: 325px;
+  height: 300px;
+  margin: 0 auto;
+  background-image: url("images/other-projects.png");
+  display: flex;
+  align-items: flex-end;
+}
+
+.web-portfolio-title {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: white;
+  margin: 0 0 20px 20px;
+}
+
+.web-portfolio-description {
+  font-family: "Inter", sans-serif;
+  color: white;
+  margin: 0 0 20px 20px;
+}
+
+.web-portfolio-tags {
+  display: flex;
+  list-style-type: none;
+}
+
+.web-portfolio-tag {
+  font-family: "Inter", sans-serif;
+  color: white;
+  margin: 5px 0 20px 15px;
+  font-size: 15px;
+  line-height: 20px;
+  background: rgba(255, 255, 255, 0.24);
+  padding: 10px;
+}
+
+.web-portfolio-see-project-btn {
+  background-color: #ff6b00;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.web-portfolio-see-project-btn:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+.web-portfolio-see-project-btn:focus {
+  background-color: #ff6b00;
+  color: white;
+}
+
+.web-portfolio-see-project-btn:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+.data-printing-wrapper {
+  width: 325px;
+  height: 300px;
+  margin: 0 auto;
+  background-image: url("images/other-projects.png");
+  display: flex;
+  align-items: flex-end;
+}
+
+.data-printing-title {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: white;
+  margin: 0 0 20px 20px;
+}
+
+.data-printing-description {
+  font-family: "Inter", sans-serif;
+  color: white;
+  margin: 0 0 20px 20px;
+}
+
+.data-printing-tags {
+  display: flex;
+  list-style-type: none;
+}
+
+.data-printing-tag {
+  font-family: "Inter", sans-serif;
+  color: white;
+  margin: 5px 0 20px 15px;
+  font-size: 15px;
+  line-height: 20px;
+  background: rgba(255, 255, 255, 0.24);
+  padding: 10px;
+}
+
+.data-printing-see-project-btn {
+  background-color: #ff6b00;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.data-printing-see-project-btn:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+.data-printing-see-project-btn:focus {
+  background-color: #ff6b00;
+  color: white;
+}
+
+.data-printing-see-project-btn:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
 }
 
 .about-me-section {
@@ -425,7 +691,7 @@ input[type=submit]:disabled {
 }
 
 .footer-link {
-  margin: 0 10px 20px 5px;
+  margin: 0 20px 20px 10px;
 }
 
 .form-line {
@@ -438,11 +704,8 @@ input[type=submit]:disabled {
 .footer-line {
   width: 40%;
   height: 5px;
-  margin: 10px auto;
+  margin: 20px auto;
   background-color: #0d151e;
-  left: 0;
-  right: 0;
-  top: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -573,6 +836,7 @@ input[type=submit]:disabled {
     line-height: 28px;
     color: #091e42;
     margin: 20px 40px 0 20px;
+    padding-right: 152px;
   }
 
   .main-project-tags {
@@ -590,6 +854,14 @@ input[type=submit]:disabled {
     width: 360px;
     margin-left: 5px;
     margin-top: -24px;
+  }
+
+  .art-printing-title {
+    display: none;
+  }
+
+  .art-printing-description {
+    display: none;
   }
 
   .art-printing-see-project-btn {
@@ -739,6 +1011,10 @@ input[type=submit]:disabled {
     padding: 10px;
   }
 
+  .other-project-see-project-btn {
+    display: none;
+  }
+
   .see-project-btn {
     margin: 20px 0 0 20px;
     font-family: 'Inter', sans-serif;
@@ -758,15 +1034,29 @@ input[type=submit]:disabled {
   .about-me-section {
     background-image: url(images/illustration-aboutme.svg);
     background-repeat: no-repeat;
-    background-position: 100% 0%;
+    background-position: 100% 12%;
     margin-top: 100px;
     width: 100%;
-    height: 1000px;
+    height: 1150px;
     background-color: #1c1a19;
     align-items: center;
     justify-content: center;
     padding: 50px 0;
     overflow: hidden;
+  }
+
+  .about-me-title {
+    margin: 70px 60px 20px 60px;
+  }
+
+  .about-me-description {
+    width: 100%;
+    margin-left: 40px;
+    line-height: 32px;
+  }
+
+  .get-my-resume-btn {
+    margin: 50px 60px;
   }
 
   .about-me-text-wrapper {
@@ -777,7 +1067,7 @@ input[type=submit]:disabled {
   .about-me-line {
     width: 100%;
     height: 2px;
-    margin: 100px -105px;
+    margin: 150px 0 50px -105px;
     background-color: #5c5c69;
   }
 
@@ -788,7 +1078,11 @@ input[type=submit]:disabled {
 
   .skills-wrapper {
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 10px 30px 50px -180px;
+    margin: 10px 50px 50px -70px;
+  }
+
+  .skill-wrapper {
+    align-items: flex-start;
   }
 
   .form-section {
@@ -835,12 +1129,16 @@ input[type=submit]:disabled {
 
   .form-line {
     margin-top: 180px;
-    margin-bottom: -30px;
+    margin-bottom: -80px;
+  }
+
+  .footer-section {
+    height: 50px;
   }
 
   .footer-links {
     margin-left: 560px;
-    margin-top: 50px;
+    margin-top: 110px;
   }
 
   .footer-line {
