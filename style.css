@@ -22,7 +22,10 @@
   color: white;
   margin-left: 45px;
   font-family: "Inter", sans-serif;
+  animation: 3s infinite  rotation 0s;
 }
+
+
 
 .nav-links {
   list-style-type: none;
@@ -174,6 +177,7 @@
 .see-project-btn:hover {
   background-color: #fff5e1;
   color: #ff6b00;
+  transition: all 0.4s ease-out 0s;
 }
 
 .see-project-btn:focus {
@@ -659,6 +663,7 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #fff5e1;
   color: #ff6b00;
+  transition: all 0.4s ease-in 0s;
 }
 
 input[type=submit]:focus {
@@ -816,6 +821,13 @@ input[type=submit]:disabled {
     height: 450px;
   }
 
+  .main-project-img:hover {
+    translate: -30px;
+    transform: scale(1.1);
+    transition: all 0.4s ease-in 0s;
+    
+  }
+
   .main-project-title {
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
@@ -856,6 +868,12 @@ input[type=submit]:disabled {
     margin-top: -24px;
   }
 
+  .project-card:hover {
+    transform: scale(1.2);
+    transition: all 0.4s ease-in 0s;
+  }
+  
+
   .art-printing-title {
     display: none;
   }
@@ -882,6 +900,7 @@ input[type=submit]:disabled {
   .art-printing-see-project-btn:hover {
     background-color: #fff5e1;
     color: #ff6b00;
+    transition: all 0.4s ease-in-out 0s;
   }
 
   .art-printing-see-project-btn:focus {
@@ -1110,6 +1129,18 @@ input[type=submit]:disabled {
     display: inline-block;
   }
 
+  form input:hover {
+    padding-left: 30px;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+  form textarea:hover {
+    padding-left: 30px;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+  
+
   input[type=text],
   input[type=email] {
     line-height: 20px;
@@ -1143,6 +1174,18 @@ input[type=submit]:disabled {
 
   .footer-line {
     display: none;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+      color: white;
+    }
+
+    to {
+      transform: rotate(360deg);
+      color: blue;
+    }
   }
 }
 
