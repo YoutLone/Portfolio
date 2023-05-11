@@ -13,6 +13,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
 - [🚀 Live Demo](#live-demo)
+- ⬛ Project Outline Presentation(#project-outline-presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -69,6 +70,11 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Project Outline Presentation <a name="project-outline-presentation"></a>
+
+-Presentation Link (https://www.loom.com/share/6d370c86aac2412db9f65e4933ebed86)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
