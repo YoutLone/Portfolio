@@ -13,7 +13,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
 - [🚀 Live Demo](#live-demo)
-- ⬛ Project Outline Presentation(#project-outline-presentation)
+- [🚀 Project Outline Presentation](#project-outline-presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
