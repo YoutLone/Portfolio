@@ -33,6 +33,10 @@ nav {
   transition: 250ms height ease-in-out;
 }
 
+.hidden {
+  display: none;
+}
+
 .line {
   display: block;
   width: 100%;
@@ -503,7 +507,7 @@ nav {
   position: relative;
   padding: 50px 0;
   overflow: hidden;
-  background-position: 100% 8%;
+  background-position: 100% 20%;
   background-image: url(images/illustration-about-me-mobile.png);
   background-repeat: no-repeat;
 }
@@ -515,8 +519,17 @@ nav {
   color: #ff6b00;
   margin: 0 0 20px 20px;
 }
+.about-me-description-mobile {
+  color: white;
+  font-family: "inter", sans-serif;
+  font-size: 18px;
+  padding: 0 20px;
+  margin-right: 60px;
+} 
+
 
 .about-me-description {
+  display: none;
   color: white;
   font-family: "inter", sans-serif;
   font-size: 18px;
@@ -572,9 +585,9 @@ nav {
 }
 
 .about-me-line {
-  width: 80%;
+  width: 90%;
   height: 1px;
-  margin: 0 auto;
+  margin: 170px auto 50px auto;
   background-color: #5c5c69;
 }
 
@@ -743,6 +756,11 @@ input[type=submit]:disabled {
   height: 5px;
   margin: 20px auto;
   background-color: #0d151e;
+}
+
+.open {
+  height: 100vh;
+  
 }
 
 @media only screen and (min-width: 768px) {
@@ -1126,8 +1144,17 @@ input[type=submit]:disabled {
   .about-me-title {
     margin: 70px 60px 20px 60px;
   }
+  .about-me-description-mobile {
+    display: none;
+  }
 
   .about-me-description {
+    display: block;
+    color: white;
+    font-family: "inter", sans-serif;
+    font-size: 18px;
+    padding: 0 20px;
+    margin-right: 60px;
     width: 100%;
     margin-left: 40px;
     line-height: 32px;
