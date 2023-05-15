@@ -1,7 +1,7 @@
-let openMenu = document.querySelector('#menu');
-let nav = document.querySelector('nav');
-let navIcon = document.querySelectorAll('.navIcon');
-let logo = document.querySelector('.navbar-logo');
+const openMenu = document.querySelector('#menu');
+const nav = document.querySelector('nav');
+const navIcon = document.querySelectorAll('.navIcon');
+const logo = document.querySelector('.navbar-logo');
 
 openMenu.addEventListener('click', () => {
   logo.classList.toggle('hidden');
