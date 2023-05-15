@@ -528,6 +528,14 @@ nav {
   margin-right: 60px;
 }
 
+.about-me-description-mobile {
+  color: white;
+  font-family: "inter", sans-serif;
+  font-size: 18px;
+  padding: 0 20px;
+  margin-right: 60px;
+}
+
 .about-me-description {
   display: none;
   color: white;
@@ -1142,6 +1150,10 @@ input[type=submit]:disabled {
 
   .about-me-title {
     margin: 70px 60px 20px 60px;
+  }
+
+  .about-me-description-mobile {
+    display: none;
   }
 
   .about-me-description-mobile {
