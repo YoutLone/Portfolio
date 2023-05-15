@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,24 +16,27 @@
   <body>
     <header class="navbar">
       <div class="navbar-wrapper">
-        <a class="navbar-logo" href="#">My Logo</a>
+        <div>
+          <h4 class="navbar-logo">My Logo</h4>
+           <div class="menu" id="menu">
+            <img class="navIcon" src="images/menu.svg" alt="Menu"/>
+            <img class="navIcon hidden" src="images/cross.svg" alt="Menu"/>
+          </div>
+        </div>
         <nav>
           <ul class="nav-links">
-            <li><a class="nav-link" id="heading" href="#">Portfolio</a></li>
-            <li><a class="nav-link" id="heading" href="#">About</a></li>
-            <li><a class="nav-link" id="heading" href="#">Contact</a></li>
+            <li><a class="nav-link"  href="#portfolio">Portfolio</a></li>
+              <div class="line"></div>
+            <li><a class="nav-link"  href="#about">About</a></li>
+            <div class="line"></div>
+            <li><a class="nav-link"  href="#contact">Contact</a></li>
+            <div class="line"></div>
             <li>
               <a class="nav-link" href="#"
                 ><img src="images/mail.svg" alt="Mail Link"
               /></a>
             </li>
           </ul>
-
-          <img
-            class="menu"
-            src="images/menu.svg"
-            alt="Menu"
-          />
         </nav>
       </div>
     </header>
@@ -93,7 +97,7 @@
 
       </div>
     </section>
-    <section class="works-section">
+    <section class="works-section" id="portfolio">
       <div class="works-title-wrapper">
         <h2 class="works-title">My Recent Works</h2>
         <div class="works-title-line"></div>
@@ -209,7 +213,7 @@
           </div>
       </div>
     </section>
-    <section class="about-me-section">
+    <section class="about-me-section" id="about">
       <div class="about-me-text-wrapper">
         <h2 class="about-me-title">About Me</h2>
         <p class="about-me-description">
@@ -305,7 +309,7 @@
       </ul>
     </section>
 
-    <section class="form-section">
+    <section class="form-section" id="contact">
       <div class="form-section-wrapper">
         <p class="form-description">
           I'm always interested<br>in hearing about new<br> projects, so if you'd<br>like to chat please<br> get in touch.
@@ -371,5 +375,7 @@
       </div>
       <div class="footer-line"></div>
     </section>
+
+    <script src="index.js"></script>
     </body>
 </html>
