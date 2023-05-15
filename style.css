@@ -25,17 +25,41 @@
   animation: 3s infinite  rotation 0s;
 }
 
+
 .nav-links {
   list-style-type: none;
 }
 
+
 .nav-link {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  color: #FFF5E1;   
+  text-decoration: none;
+
+}
+
+#heading {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-link img {
   display: none;
 }
 
 .menu {
   width: 30px;
   filter: invert(100%);
+  cursor: pointer;
 }
 
 .headline-section {
