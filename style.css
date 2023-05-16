@@ -519,14 +519,14 @@ nav {
   color: #ff6b00;
   margin: 0 0 20px 20px;
 }
+
 .about-me-description-mobile {
   color: white;
   font-family: "inter", sans-serif;
   font-size: 18px;
   padding: 0 20px;
   margin-right: 60px;
-} 
-
+}
 
 .about-me-description {
   display: none;
@@ -760,7 +760,6 @@ input[type=submit]:disabled {
 
 .open {
   height: 100vh;
-  
 }
 
 @media only screen and (min-width: 768px) {
@@ -1144,6 +1143,7 @@ input[type=submit]:disabled {
   .about-me-title {
     margin: 70px 60px 20px 60px;
   }
+
   .about-me-description-mobile {
     display: none;
   }
