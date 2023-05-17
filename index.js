@@ -127,6 +127,7 @@ projectElements.forEach((projectElement) => {
   projectElement.addEventListener('click', (e) => {
     // Show the modal
     modal.style.display = 'flex';
+    modal.style.position='fixed';
     const content = projects[e.currentTarget.dataset.position];
     // Update the modal with the corresponding project details
     updateModal(content);

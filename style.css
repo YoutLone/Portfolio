@@ -790,8 +790,8 @@ input[type=submit]:disabled {
 
 .close {
   position: absolute;
-  top: 18px;
-  right: 20px;
+  top: 75px;
+  right: 40px;
   font-size: 42px;
   cursor: pointer;
   transform: rotate(45deg);
@@ -886,13 +886,19 @@ input[type=submit]:disabled {
 }
 
 @media only screen and (min-width: 768px) {
+
+  .close {
+    top: 100px;
+    right: 130px;
+  }
+  
   .modal {
     height: 100%;
   }
 
   .modal-content {
     width: 85%;
-    height: 75%;
+    height: 76%;
   }
 
   .main-project {
