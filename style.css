@@ -773,17 +773,16 @@ input[type=submit]:disabled {
   background-color: rgba(0, 0, 0, 0);
   backdrop-filter: blur(6px);
   position: absolute;
-  top: 0;
   display: none;
   justify-content: center;
   align-items: center;
-  top:0%;
+  top: 0%;
   left: 0%;
   z-index: 9999;
 }
 
 .modal-content {
-  top:0%;
+  top: 0%;
   left: 0%;
   width: 450px;
   height: 92%;
@@ -792,6 +791,7 @@ input[type=submit]:disabled {
   background-color: white;
   border: 1px solid #dfe1e6;
   opacity: 1;
+
   /* position: relative; */
 }
 
@@ -894,13 +894,12 @@ input[type=submit]:disabled {
 }
 
 @media only screen and (min-width: 768px) {
-
   .close {
     position: absolute;
     top: 70px;
     left: 1230px;
   }
-  
+
   .modal {
     height: 100%;
   }
