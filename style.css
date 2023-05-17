@@ -769,7 +769,7 @@ input[type=submit]:disabled {
 
 .modal {
   width: 100%;
-  height: 180%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0);
   backdrop-filter: blur(6px);
   position: absolute;
@@ -777,11 +777,18 @@ input[type=submit]:disabled {
   display: none;
   justify-content: center;
   align-items: center;
+  top:0%;
+  left: 0%;
+  z-index: 9999;
 }
 
 .modal-content {
+  top:0%;
+  left: 0%;
   width: 450px;
-  height: 950px;
+  height: 92%;
+  overflow-y: scroll;
+  overflow-x: hidden;
   background-color: white;
   border: 1px solid #dfe1e6;
   opacity: 1;
@@ -789,9 +796,9 @@ input[type=submit]:disabled {
 }
 
 .close {
-  position: absolute;
-  top: 75px;
-  right: 40px;
+  position: relative;
+  top: 120px;
+  left: 340px;
   font-size: 42px;
   cursor: pointer;
   transform: rotate(45deg);
@@ -806,7 +813,7 @@ input[type=submit]:disabled {
   font-weight: 400;
   font-size: 32px;
   color: #091e42;
-  margin: 20px 25px 40px 25px;
+  margin: 20px 25px -20px 25px;
 }
 
 .main-description {
@@ -847,6 +854,7 @@ input[type=submit]:disabled {
 
 .button {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .img-btn {
@@ -888,8 +896,9 @@ input[type=submit]:disabled {
 @media only screen and (min-width: 768px) {
 
   .close {
-    top: 100px;
-    right: 130px;
+    position: absolute;
+    top: 70px;
+    left: 1230px;
   }
   
   .modal {
@@ -897,8 +906,9 @@ input[type=submit]:disabled {
   }
 
   .modal-content {
-    width: 85%;
-    height: 76%;
+    width: 90%;
+    height: 85%;
+    overflow-y: hidden;
   }
 
   .main-project {
@@ -911,12 +921,12 @@ input[type=submit]:disabled {
 
   .image {
     width: 620px;
-    height: 340px;
+    height: 400px;
   }
 
   .main-description {
     margin-left: 660px;
-    margin-top: -345px;
+    margin-top: -410px;
   }
 
   .modal-text {
@@ -926,7 +936,7 @@ input[type=submit]:disabled {
 
   .button {
     margin-left: 636px;
-    margin-top: 89px;
+    margin-top: 178px;
   }
 
   .navbar {
