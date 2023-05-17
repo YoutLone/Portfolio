@@ -696,7 +696,7 @@ textarea {
 }
 
 input[type=submit] {
-  margin: 0 155px;
+  /* margin: 0 155px; */
   border: none;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -893,7 +893,16 @@ input[type=submit]:disabled {
   color: #5b5957;
 }
 
+@media only screen and (min-width: 375px) {
+  .submit_button{
+    display: flex; 
+    justify-content: center;
+  }
+}
 @media only screen and (min-width: 768px) {
+
+
+
   .close {
     position: absolute;
     top: 70px;
@@ -1041,16 +1050,17 @@ input[type=submit]:disabled {
     margin: 20px 0;
   }
 
-  .works-title-line {
+  /* .works-title-line {
     width: 68%;
     margin: auto;
     margin-right: -20px;
-  }
+  } */
 
   .works-title {
     font-size: 40px;
     margin: auto;
     margin-left: 5px;
+    white-space: nowrap;
   }
 
   .works-wrapper {
