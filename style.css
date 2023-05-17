@@ -785,7 +785,7 @@ input[type=submit]:disabled {
   background-color: white;
   border: 1px solid #dfe1e6;
   opacity: 1;
-  position: relative;
+  /* position: relative; */
 }
 
 .close {
