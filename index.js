@@ -33,7 +33,7 @@ const projects = [
     modaltext: 'Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
     tags: ['HTML', 'Bootstrap', 'Ruby', 'CSS'],
     image: './images/project-2.png',
-    live: 'https://YoutLone.github.io/portfolio/',
+    live: 'https://raw.githack.com/YoutLone/Portfolio/popup-window-branch/index.html',
     source: 'https://github.com/YoutLone/Portfolio',
   },
   {
@@ -42,7 +42,7 @@ const projects = [
     modaltext: 'Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
     tags: ['HTML', 'Bootstrap', 'Ruby'],
     image: './images/art-printing-1.png',
-    live: 'https://YoutLone.github.io/portfolio/',
+    live: 'https://raw.githack.com/YoutLone/Portfolio/popup-window-branch/index.html',
     source: 'https://github.com/YoutLone/Portfolio',
   },
   {
@@ -51,7 +51,7 @@ const projects = [
     modaltext: 'Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
     tags: ['HTML', 'Bootstrap', 'Ruby'],
     image: './images/data-healthcare-1.png',
-    live: 'https://YoutLone.github.io/portfolio/',
+    live: 'https://raw.githack.com/YoutLone/Portfolio/popup-window-branch/index.html',
     source: 'https://github.com/YoutLone/Portfolio',
   },
   {
@@ -60,7 +60,7 @@ const projects = [
     modaltext: 'Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
     tags: ['HTML', 'Bootstrap', 'Ruby'],
     image: './images/web-portfolio-1.png',
-    live: 'https://YoutLone.github.io/portfolio/',
+    live: 'https://raw.githack.com/YoutLone/Portfolio/popup-window-branch/index.html',
     source: 'https://github.com/YoutLone/Portfolio',
   },
   {
@@ -69,7 +69,7 @@ const projects = [
     modaltext: 'Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
     tags: ['HTML', 'Bootstrap', 'Ruby'],
     image: './images/data-printing-1.png',
-    live: 'https://YoutLone.github.io/portfolio/',
+    live: 'https://raw.githack.com/YoutLone/Portfolio/popup-window-branch/index.html',
     source: 'https://github.com/YoutLone/Portfolio',
   },
   {
@@ -78,7 +78,7 @@ const projects = [
     modaltext: 'Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
     tags: ['HTML', 'Bootstrap', 'Ruby'],
     image: './images/data-healthcare-1.png',
-    live: 'https://YoutLone.github.io/portfolio/',
+    live: 'https://raw.githack.com/YoutLone/Portfolio/popup-window-branch/index.html',
     source: 'https://github.com/YoutLone/Portfolio',
   },
   {
@@ -87,7 +87,7 @@ const projects = [
     modaltext: 'Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
     tags: ['HTML', 'Bootstrap', 'Ruby'],
     image: './images/web-portfolio-1.png',
-    live: 'https://YoutLone.github.io/portfolio/',
+    live: 'https://raw.githack.com/YoutLone/Portfolio/popup-window-branch/index.html',
     source: 'https://github.com/YoutLone/Portfolio',
   },
 ];
@@ -123,8 +123,7 @@ function updateModal(project) {
 
 // Attach event listeners to each images
 const projectElements = document.querySelectorAll('.click-img');
-
-projectElements.forEach((projectElement, index) => {
+projectElements.forEach((projectElement) => {
   projectElement.addEventListener('click', (e) => {
     // Show the modal
     modal.style.display = 'flex';
