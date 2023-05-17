@@ -123,15 +123,27 @@ function updateModal(project) {
   seeSourceBtn.href = project.source;
 }
 
+// document.querySelector('.click-imgsds').addEventListener('click', (e) => {
+//   console.log("Dddd")
+//   console.log(e.currentTarget.dataset)
+//   const content = projects[e.currentTarget.dataset.position];
+
+//     // Update the modal with the corresponding project details
+//     updateModal(content);
+// });
+
+
+
 // Attach event listeners to each images
 const projectElements = document.querySelectorAll('.click-img');
 projectElements.forEach((projectElement, index) => {
-  projectElement.addEventListener('click', () => {
+  projectElement.addEventListener('click', (e) => {
     // Show the modal
     modal.style.display = 'flex';
-
+    const content = projects[e.currentTarget.dataset.position];
     // Update the modal with the corresponding project details
-    updateModal(projects[index]);
+    updateModal(content);
+    window.scrollTo(0, 0);
   });
 });
 
