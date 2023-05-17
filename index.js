@@ -29,10 +29,10 @@ window.addEventListener('resize', () => {
 const projects = [
   {
     projectName: 'Multi-Post Stories',
-    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
     modaltext: 'Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
-    tags:['HTML','Bootstrap','Ruby on Rails'],
-    image:'./images/project-2.png',
+    tags: ['HTML', 'Bootstrap', 'Ruby', 'CSS'],
+    image: './images/project-2.png',
     live: 'https://YoutLone.github.io/portfolio/',
     source: 'https://github.com/YoutLone/Portfolio',
   },
@@ -40,16 +40,16 @@ const projects = [
     projectName: 'Professional Art Printing',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
     modaltext: 'Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
-    tags:['HTML','Bootstrap','Ruby'],
+    tags: ['HTML', 'Bootstrap', 'Ruby'],
     image: './images/art-printing-1.png',
     live: 'https://YoutLone.github.io/portfolio/',
     source: 'https://github.com/YoutLone/Portfolio',
   },
   {
-    projectName: 'Data Dashboard Healthcare',
+    projectName: 'Data Dashboard Health',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
     modaltext: 'Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
-    tags:['HTML','Bootstrap','Ruby'],
+    tags: ['HTML', 'Bootstrap', 'Ruby'],
     image: './images/data-healthcare-1.png',
     live: 'https://YoutLone.github.io/portfolio/',
     source: 'https://github.com/YoutLone/Portfolio',
@@ -58,7 +58,7 @@ const projects = [
     projectName: 'Website Portfolio',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
     modaltext: 'Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
-    tags:['HTML','Bootstrap','Ruby'],
+    tags: ['HTML', 'Bootstrap', 'Ruby'],
     image: './images/web-portfolio-1.png',
     live: 'https://YoutLone.github.io/portfolio/',
     source: 'https://github.com/YoutLone/Portfolio',
@@ -67,7 +67,7 @@ const projects = [
     projectName: 'Professional Art Printing Data More',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
     modaltext: 'Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
-    tags:['HTML','Bootstrap','Ruby'],
+    tags: ['HTML', 'Bootstrap', 'Ruby'],
     image: './images/data-printing-1.png',
     live: 'https://YoutLone.github.io/portfolio/',
     source: 'https://github.com/YoutLone/Portfolio',
@@ -76,7 +76,7 @@ const projects = [
     projectName: 'Data Dashboard Healthcare',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
     modaltext: 'Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
-    tags:['HTML','Bootstrap','Ruby'],
+    tags: ['HTML', 'Bootstrap', 'Ruby'],
     image: './images/data-healthcare-1.png',
     live: 'https://YoutLone.github.io/portfolio/',
     source: 'https://github.com/YoutLone/Portfolio',
@@ -85,13 +85,12 @@ const projects = [
     projectName: 'Website Portfolio',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
     modaltext: 'Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
-    tags:['HTML','Bootstrap','Ruby'],
+    tags: ['HTML', 'Bootstrap', 'Ruby'],
     image: './images/web-portfolio-1.png',
     live: 'https://YoutLone.github.io/portfolio/',
     source: 'https://github.com/YoutLone/Portfolio',
   },
 ];
-
 
 // Get the modal element
 const modal = document.querySelector('.modal');
@@ -104,10 +103,9 @@ function updateModal(project) {
   modalContent.querySelector('.main-description').textContent = project.description;
   modalContent.querySelector('.modal-text').textContent = project.modaltext;
 
-
   const tagsContainer = modalContent.querySelector('.main-tags');
   tagsContainer.innerHTML = '';
-  project.tags.forEach(tag => {
+  project.tags.forEach((tag) => {
     const tagElement = document.createElement('li');
     tagElement.className = 'main-tag';
     tagElement.textContent = tag;
@@ -123,19 +121,9 @@ function updateModal(project) {
   seeSourceBtn.href = project.source;
 }
 
-// document.querySelector('.click-imgsds').addEventListener('click', (e) => {
-//   console.log("Dddd")
-//   console.log(e.currentTarget.dataset)
-//   const content = projects[e.currentTarget.dataset.position];
-
-//     // Update the modal with the corresponding project details
-//     updateModal(content);
-// });
-
-
-
 // Attach event listeners to each images
 const projectElements = document.querySelectorAll('.click-img');
+
 projectElements.forEach((projectElement, index) => {
   projectElement.addEventListener('click', (e) => {
     // Show the modal
@@ -149,7 +137,7 @@ projectElements.forEach((projectElement, index) => {
 
 // Function to close the modal
 function closeModal() {
-  modal.style.display = 'none'; 
+  modal.style.display = 'none';
 }
 
 // Close the modal when the close button is clicked
@@ -162,6 +150,3 @@ window.addEventListener('click', (event) => {
     closeModal();
   }
 });
-
-
-
