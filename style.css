@@ -696,7 +696,7 @@ textarea {
 }
 
 input[type=submit] {
-  margin: 0 155px;
+  margin-left: 160px;
   border: none;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -1473,3 +1473,4 @@ input[type=submit]:disabled {
     padding-left: 200px;
   }
 }
+
