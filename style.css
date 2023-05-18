@@ -696,7 +696,7 @@ textarea {
 }
 
 input[type=submit] {
-  margin-left: 160px;
+  /* margin: 0 155px; */
   border: none;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -893,8 +893,17 @@ input[type=submit]:disabled {
   color: #5b5957;
 }
 
+@media only screen and (min-width: 375px) {
+  .submit_button{
+    display: flex; 
+    justify-content: center;
+  }
+}
 @media only screen and (min-width: 768px) {
-  .close {
+
+/* 
+
+   .close {
     position: absolute;
     top: 70px;
     left: 1230px;
@@ -1025,7 +1034,7 @@ input[type=submit]:disabled {
 
   .headline-link-img {
     margin-top: 10px;
-  }
+  } */
 
   .headline-link-img:hover {
     transform: scale(2);
@@ -1041,27 +1050,23 @@ input[type=submit]:disabled {
     margin: 20px 0;
   }
 
-  .works-title-line {
-    width: 68%;
-    margin: auto;
-    margin-right: -20px;
-  }
+  
 
   .works-title {
     font-size: 40px;
     margin: auto;
     margin-left: 5px;
+    white-space: nowrap;
   }
 
   .works-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin-top: 20px;
+    width: 100%;
   }
 
   .main-project-wrapper {
-    grid-column: 1 / span 2;
-    flex-direction: row;
     margin: 0;
     width: 100%;
     padding: 0;
@@ -1070,9 +1075,10 @@ input[type=submit]:disabled {
   .main-project-img {
     margin-top: 80px;
     margin-left: 5px;
-    width: 600px;
-    height: 450px;
+    width: 100%;
+    padding: 20px;
   }
+  
 
   .main-project-img:hover {
     translate: -30px;
@@ -1102,6 +1108,7 @@ input[type=submit]:disabled {
     margin: 20px 40px 0 20px;
     padding-right: 152px;
   }
+
 
   .main-project-tags {
     margin: 20px 0 0 20px;
@@ -1394,7 +1401,7 @@ input[type=submit]:disabled {
     padding-left: 30px;
     transition: all 0.4s ease-in-out 0s;
   }
-
+/*
   input[type=text],
   input[type=email] {
     line-height: 20px;
@@ -1406,17 +1413,18 @@ input[type=submit]:disabled {
     width: 140%;
     margin-left: -60px;
   }
+*/
 
   form textarea:hover {
     padding-left: 30px;
     transition: all 0.4s ease-in-out 0s;
   }
-
+/*
   input[type=submit] {
     margin-left: -60px;
     margin-right: 420px;
   }
-
+*/
   .form-line {
     margin-top: 180px;
     margin-bottom: -80px;
