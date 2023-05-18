@@ -696,7 +696,7 @@ textarea {
 }
 
 input[type=submit] {
-  margin: 0 155px;
+  margin-left: 160px;
   border: none;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -893,7 +893,43 @@ input[type=submit]:disabled {
   color: #5b5957;
 }
 
+.error-message {
+  font-family: 'Inter',sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  padding-top: 20px;
+  margin-left: 60px;
+}
+
+.sent-message {
+  font-family: 'Inter',sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+  padding-top: 20px;
+  margin-left: 80px;
+}
+
 @media only screen and (min-width: 768px) {
+  .error-message {
+    font-family: 'Inter',sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    padding-top: 20px;
+    margin-left: -60px;
+  }
+
+  .sent-message {
+    font-family: 'Inter',sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    padding-top: 20px;
+    margin-left: -60px;
+  }
+
   .close {
     position: absolute;
     top: 70px;
@@ -1473,3 +1509,4 @@ input[type=submit]:disabled {
     padding-left: 200px;
   }
 }
+

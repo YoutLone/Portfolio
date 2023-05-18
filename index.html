@@ -264,11 +264,13 @@
         I'm always interested<br>in hearing about new<br> projects, so if you'd<br>like to chat please<br> get in touch.
       </p>
       <form class="contact-form" action="https://formspree.io/f/mknayjll" method="POST">
-        <input type="text" name="username" maxlength="30" placeholder="Full Name" required><br><br>
-        <input type="email" name="email" placeholder="Email address" required><br><br>
-        <textarea maxlength="500" placeholder="Write me something..." name="message-box"
+        <input type="text" class="username" name="username" maxlength="30" placeholder="Full Name" required><br><br>
+        <input type="email" id="email" name="email" placeholder="Email address" required><br><br>
+        <textarea maxlength="500" class="message" placeholder="Write me something..." name="message-box"
           required></textarea><br><br><br>
-        <input type="submit" value="Get in touch">
+        <input type="submit" class="form-btn" value="Get in touch">
+        <p class="error-message"></p>
+        <h4 class="sent-message"></h4>
       </form>
     </div>
     <div class="form-line"></div>
