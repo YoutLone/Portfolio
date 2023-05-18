@@ -155,17 +155,15 @@ nav {
 }
 
 .main-project-wrapper {
-  width: 325px;
-  margin: 0 auto;
+  margin: 0 24px;
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
 }
 
 .main-project-img {
-  width: 325px;
-  margin: 0 auto;
   cursor: pointer;
+  width: 100%;
 }
 
 .main-project-title {
@@ -227,13 +225,12 @@ nav {
 }
 
 .art-printing-wrapper {
-  width: 325px;
   height: 300px;
-  margin: -70px auto 0 auto;
   background-image: url("images/other-projects.png");
   cursor: pointer;
   display: flex;
   align-items: flex-end;
+  margin: 0 24px;
 }
 
 .art-printing-title {
@@ -265,15 +262,7 @@ nav {
   padding: 10px;
 }
 
-.data-healthcare-wrapper {
-  width: 325px;
-  height: 300px;
-  margin: 0 auto;
-  background-image: url("images/other-projects.png");
-  display: flex;
-  cursor: pointer;
-  align-items: flex-end;
-}
+
 
 .data-healthcare-title {
   font-family: "Crete Round", serif;
@@ -365,13 +354,12 @@ nav {
 }
 
 .web-portfolio-wrapper {
-  width: 325px;
   height: 300px;
-  margin: 0 auto;
   background-image: url("images/other-projects.png");
   display: flex;
   cursor: pointer;
   align-items: flex-end;
+  margin: 0 24px;
 }
 
 .web-portfolio-title {
@@ -433,74 +421,6 @@ nav {
   color: #5b5957;
 }
 
-.data-printing-wrapper {
-  width: 325px;
-  height: 300px;
-  margin: 0 auto;
-  background-image: url("images/other-projects.png");
-  display: flex;
-  cursor: pointer;
-  align-items: flex-end;
-}
-
-.data-printing-title {
-  font-family: "Crete Round", serif;
-  font-weight: 400;
-  font-size: 32px;
-  color: white;
-  margin: 0 0 20px 20px;
-}
-
-.data-printing-description {
-  font-family: "Inter", sans-serif;
-  color: white;
-  margin: 0 0 20px 20px;
-}
-
-.data-printing-tags {
-  display: flex;
-  list-style-type: none;
-}
-
-.data-printing-tag {
-  font-family: "Inter", sans-serif;
-  color: white;
-  margin: 5px 0 20px 15px;
-  font-size: 15px;
-  line-height: 20px;
-  background: rgba(255, 255, 255, 0.24);
-  padding: 10px;
-}
-
-.data-printing-see-project-btn {
-  background-color: #ff6b00;
-  color: white;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-}
-
-.data-printing-see-project-btn:hover {
-  background-color: #fff5e1;
-  color: #ff6b00;
-}
-
-.data-printing-see-project-btn:focus {
-  background-color: #ff6b00;
-  color: white;
-}
-
-.data-printing-see-project-btn:disabled {
-  background-color: #f4f1f0;
-  color: #5b5957;
-}
 
 .about-me-section {
   margin-top: 100px;
@@ -696,7 +616,6 @@ textarea {
 }
 
 input[type=submit] {
-  margin-left: 160px;
   border: none;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -726,19 +645,26 @@ input[type=submit]:disabled {
   color: #5b5957;
 }
 
+.contact-form-button {
+  display: flex;
+  justify-content: center;
+}
+
 .footer-section {
-  height: 60px;
+  margin: 20px 0;
+  border-top: 1px solid #dfe1e6;
 }
 
 #footer-section-wrapper {
   margin-top: 25px;
   margin-bottom: 47px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-links {
   display: flex;
   align-items: center;
-  margin-left: 120px;
 }
 
 .footer-links li {
@@ -749,19 +675,7 @@ input[type=submit]:disabled {
   margin: 0 20px 20px 10px;
 }
 
-.form-line {
-  width: 100%;
-  height: 1px;
-  margin-top: 90px;
-  background-color: #dfe1e6;
-}
 
-.footer-line {
-  width: 40%;
-  height: 5px;
-  margin: 20px auto;
-  background-color: #0d151e;
-}
 
 .open {
   height: 100vh;
@@ -791,8 +705,6 @@ input[type=submit]:disabled {
   background-color: white;
   border: 1px solid #dfe1e6;
   opacity: 1;
-
-  /* position: relative; */
 }
 
 .close {
@@ -911,7 +823,7 @@ input[type=submit]:disabled {
   margin-left: 80px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .error-message {
     font-family: 'Inter',sans-serif;
     font-size: 20px;
@@ -1152,7 +1064,7 @@ input[type=submit]:disabled {
     border: 3px solid lightskyblue;
     height: 400px;
     width: 360px;
-    margin-left: 5px;
+    margin-left: -10px;
     margin-top: -24px;
   }
 
@@ -1200,52 +1112,20 @@ input[type=submit]:disabled {
     color: #5b5957;
   }
 
-  .data-healthcare-wrapper {
-    background-image: url("images/data-healthcare.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 400px;
-    width: 360px;
-    margin-left: -30px;
-    margin-top: -24px;
-  }
-
-  .data-healthcare-title {
-    font-family: "Crete Round", serif;
-    font-weight: 400;
-    font-size: 32px;
-    color: white;
-    margin: 160px 0 20px 20px;
-  }
-
-  .data-healthcare-description {
-    font-family: "Inter", sans-serif;
-    color: white;
-    margin: 0 0 20px 20px;
-  }
-
-  .data-healthcare-tags {
-    display: flex;
-    list-style-type: none;
-  }
-
-  .data-healthcare-tag {
-    font-family: "Inter", sans-serif;
-    color: white;
-    margin: 5px 0 20px 15px;
-    font-size: 15px;
-    line-height: 20px;
-    background: rgba(255, 255, 255, 0.24);
-    padding: 10px;
-  }
+ 
 
   .web-portfolio-wrapper {
     background-image: url("images/web-portfolio.png");
+
+
+    display: flex;
+    align-items: flex-end;
     background-repeat: no-repeat;
     background-size: contain;
+    border: 3px solid lightskyblue;
     height: 400px;
     width: 360px;
-    margin-left: -30px;
+    margin-left: -10px;
     margin-top: -24px;
   }
 
@@ -1278,44 +1158,6 @@ input[type=submit]:disabled {
     padding: 10px;
   }
 
-  .data-printing-wrapper {
-    background-image: url("images/data-printing.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 400px;
-    width: 360px;
-    margin-left: 5px;
-    margin-top: -24px;
-  }
-
-  .data-printing-title {
-    font-family: "Crete Round", serif;
-    font-weight: 400;
-    font-size: 32px;
-    color: white;
-    margin: 160px 0 20px 20px;
-  }
-
-  .data-printing-description {
-    font-family: "Inter", sans-serif;
-    color: white;
-    margin: 0 0 20px 20px;
-  }
-
-  .data-printing-tags {
-    display: flex;
-    list-style-type: none;
-  }
-
-  .data-printing-tag {
-    font-family: "Inter", sans-serif;
-    color: white;
-    margin: 5px 0 20px 15px;
-    font-size: 15px;
-    line-height: 20px;
-    background: rgba(255, 255, 255, 0.24);
-    padding: 10px;
-  }
 
   .other-project-see-project-btn {
     display: none;
@@ -1453,23 +1295,21 @@ input[type=submit]:disabled {
     margin-right: 420px;
   }
 
+  .contact-form-button {
+    display: flex;
+    justify-content: start;
+  }
+
   .form-line {
     margin-top: 180px;
     margin-bottom: -80px;
   }
 
-  .footer-section {
-    height: 50px;
-  }
 
-  .footer-links {
-    margin-left: 560px;
-    margin-top: 110px;
-  }
 
-  .footer-line {
-    display: none;
-  }
+  
+
+
 
   .footer-link-img:hover {
     transform: scale(2);
