@@ -894,16 +894,14 @@ input[type=submit]:disabled {
 }
 
 @media only screen and (min-width: 375px) {
-  .submit_button{
-    display: flex; 
+  .submit_button {
+    display: flex;
     justify-content: center;
   }
 }
+
 @media only screen and (min-width: 768px) {
-
-/* 
-
-   .close {
+  .close {
     position: absolute;
     top: 70px;
     left: 1230px;
@@ -1034,7 +1032,7 @@ input[type=submit]:disabled {
 
   .headline-link-img {
     margin-top: 10px;
-  } */
+  }
 
   .headline-link-img:hover {
     transform: scale(2);
@@ -1050,11 +1048,14 @@ input[type=submit]:disabled {
     margin: 20px 0;
   }
 
-  
+  .works-title-line {
+    width: 90%;
+    margin: 20px -17px 20px 17px;
+  }
 
   .works-title {
     font-size: 40px;
-    margin: auto;
+    margin: -10px auto auto auto;
     margin-left: 5px;
     white-space: nowrap;
   }
@@ -1073,12 +1074,11 @@ input[type=submit]:disabled {
   }
 
   .main-project-img {
-    margin-top: 80px;
-    margin-left: 5px;
-    width: 100%;
+    margin-left: -16px;
+    margin-top: 45px;
+    width: 65%;
     padding: 20px;
   }
-  
 
   .main-project-img:hover {
     translate: -30px;
@@ -1094,7 +1094,8 @@ input[type=submit]:disabled {
     line-height: 52px;
     align-items: center;
     color: #091e42;
-    margin: 80px 0 0 20px;
+    width: 50%;
+    margin: -484px 0 0 719px;
   }
 
   .main-project-description {
@@ -1105,13 +1106,12 @@ input[type=submit]:disabled {
     font-size: 20px;
     line-height: 28px;
     color: #091e42;
-    margin: 20px 40px 0 20px;
+    margin: 10px 40px 0 723px;
     padding-right: 152px;
   }
 
-
   .main-project-tags {
-    margin: 20px 0 0 20px;
+    margin: 18px 0 0 725px;
   }
 
   .art-printing-wrapper {
@@ -1293,7 +1293,7 @@ input[type=submit]:disabled {
   }
 
   .see-project-btn {
-    margin: 20px 0 0 20px;
+    margin: 10px 0 0 725px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -1401,10 +1401,10 @@ input[type=submit]:disabled {
     padding-left: 30px;
     transition: all 0.4s ease-in-out 0s;
   }
-/*
+
   input[type=text],
   input[type=email] {
-    line-height: 20px;
+    line-height: 50px;
     width: 140%;
     margin-left: -60px;
   }
@@ -1413,18 +1413,17 @@ input[type=submit]:disabled {
     width: 140%;
     margin-left: -60px;
   }
-*/
 
   form textarea:hover {
     padding-left: 30px;
     transition: all 0.4s ease-in-out 0s;
   }
-/*
+
   input[type=submit] {
-    margin-left: -60px;
-    margin-right: 420px;
+    margin-left: -510px;
+    margin-top: 20px;
   }
-*/
+
   .form-line {
     margin-top: 180px;
     margin-bottom: -80px;
@@ -1481,4 +1480,3 @@ input[type=submit]:disabled {
     padding-left: 200px;
   }
 }
-
