@@ -181,3 +181,35 @@ formBtn.addEventListener('click', (e) => {
     email.style.border = '2px solid red';
   }
 });
+
+
+// Start of Local Storage
+const userName = document.querySelector('.username');
+const userEmail = document.querySelector('#email');
+const userMessage = document.querySelector('.message');
+
+// Retrieve stored form data or initialize an empty object
+const storedUserData = JSON.parse(localStorage.getItem('userData'));
+const userData = storedUserData ? storedUserData : {};
+
+// Populate form fields with stored form data or empty string
+userName.value = userData.name || '';
+userEmail.value = userData.email || '';
+userMessage.value = userData.message || '';
+
+// Update and store form data on input change
+userName.addEventListener('input', updateUserData);
+userEmail.addEventListener('input', updateUserData);
+userMessage.addEventListener('input', updateUserData);
+
+function updateUserData() {
+  const newUserData = {
+    name: userName.value,
+    email: userEmail.value,
+    message: userMessage.value,
+  };
+
+  // Store updated form data in localStorage
+  localStorage.setItem('userData', JSON.stringify(newUserData));
+}
+
