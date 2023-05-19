@@ -159,22 +159,25 @@ const errorMessage = document.querySelector('.error-message');
 const sentMessage = document.querySelector('.sent-message');
 const contactForm = document.querySelector('.contact-form');
 
-function isItUppercase(value) {
-  if (value.match(/^[a-z@.0-9-_]*$/)) {
+function isLowerCase(value) {
+  if (value === value.toLowerCase()) {
     return true;
   }
   return false;
 }
 
 formBtn.addEventListener('click', (e) => {
-  if (email.value !== '' && isItUppercase(email.value)) {
-    sentMessage.textContent = ' Message is successfully send!';
+  e.preventDefault(); // Prevent the form from submitting by default
+
+  if (email.value !== '' && isLowerCase(email.value)) {
+    errorMessage.textContent = ''; // Clear any previous error messages
+    sentMessage.textContent = 'Message is successfully sent!';
     email.style.border = '1px solid green';
     contactForm.submit();
     contactForm.reset();
   } else {
-    e.preventDefault();
-    errorMessage.textContent = 'Your email should be in lowerCase';
+    sentMessage.textContent = ''; // Clear the success message
+    errorMessage.textContent = 'Your email should be in lowercase';
     email.style.border = '2px solid red';
   }
 });
