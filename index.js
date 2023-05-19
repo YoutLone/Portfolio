@@ -150,3 +150,34 @@ window.addEventListener('click', (event) => {
     closeModal();
   }
 });
+
+// Validate-Contact_Form
+
+const email = document.querySelector('#email');
+const formBtn = document.querySelector('.form-btn');
+const errorMessage = document.querySelector('.error-message');
+const sentMessage = document.querySelector('.sent-message');
+const contactForm = document.querySelector('.contact-form');
+
+function isLowerCase(value) {
+  if (value === value.toLowerCase()) {
+    return true;
+  }
+  return false;
+}
+
+formBtn.addEventListener('click', (e) => {
+  e.preventDefault(); // Prevent the form from submitting by default
+
+  if (email.value !== '' && isLowerCase(email.value)) {
+    errorMessage.textContent = ''; // Clear any previous error messages
+    sentMessage.textContent = 'Message is successfully sent!';
+    email.style.border = '1px solid green';
+    contactForm.submit();
+    contactForm.reset();
+  } else {
+    sentMessage.textContent = ''; // Clear the success message
+    errorMessage.textContent = 'Your email should be in lowercase';
+    email.style.border = '2px solid red';
+  }
+});
