@@ -167,7 +167,7 @@ function isItUppercase(value) {
 }
 
 formBtn.addEventListener('click', (e) => {
-  if (email.value != "" && isItUppercase(email.value)) {
+  if (email.value !== '' && isItUppercase(email.value)) {
     sentMessage.textContent = ' Message is successfully send!';
     email.style.border = '1px solid green';
     contactForm.submit();
@@ -178,4 +178,3 @@ formBtn.addEventListener('click', (e) => {
     email.style.border = '2px solid red';
   }
 });
-
