@@ -22,6 +22,11 @@ window.addEventListener('resize', () => {
     logo.classList.remove('hidden');
   }
 });
+
+const someVariable = document.querySelector('.nonexistent-element');
+someVariable.addEventlistener('click',() => {
+  console.log('Clicked');
+});
 // End of Mobile Menu
 
 // Start of Window-popup Menu
