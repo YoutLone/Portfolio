@@ -66,7 +66,7 @@
 
 > Added a link to my deployed project.
 
-- [Live Demo Link](https://thanmyohtet.github.io/Portfolio/)
+- [Live Demo Link](https://youtlone.github.io/Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
