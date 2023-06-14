@@ -23,23 +23,19 @@ window.addEventListener('resize', () => {
   }
 });
 
-const someVariable = document.querySelector('.nonexistent-element');
-someVariable.addEventlistener('click',() => {
-  console.log('Clicked');
-});
 // End of Mobile Menu
 
 // Start of Window-popup Menu
 
 const projects = [
   {
-    projectName: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
-    modaltext: 'Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book.',
-    tags: ['HTML', 'Bootstrap', 'Ruby', 'CSS'],
-    image: './images/project-2.png',
-    live: 'https://raw.githack.com/YoutLone/Portfolio/popup-window-branch/index.html',
-    source: 'https://github.com/YoutLone/Portfolio',
+    projectName: 'To Do List App',
+    description: 'The Todo List Website is a web application designed to help users effectively manage their tasks, stay organized, and increase productivity.',
+    modaltext: 'This project provides a user-friendly interface where individuals can create, update, and track their to-do lists, ensuring that important tasks are completed in a timely manner.',
+    tags: ['HTML', 'JavaScript', 'CSS'],
+    image: './images/todo.png',
+    live: 'https://youtlone.github.io/To-Do-List/',
+    source: 'https://github.com/YoutLone/To-Do-List',
   },
   {
     projectName: 'Professional Art Printing',
@@ -186,3 +182,33 @@ formBtn.addEventListener('click', (e) => {
     email.style.border = '2px solid red';
   }
 });
+
+// Start of Local Storage
+const userName = document.querySelector('.username');
+const userEmail = document.querySelector('#email');
+const userMessage = document.querySelector('.message');
+
+// Retrieve stored form data or initialize an empty object
+const storedUserData = JSON.parse(localStorage.getItem('userData'));
+const userData = storedUserData || {};
+
+// Populate form fields with stored form data or empty string
+userName.value = userData.name || '';
+userEmail.value = userData.email || '';
+userMessage.value = userData.message || '';
+
+function updateUserData() {
+  const newUserData = {
+    name: userName.value,
+    email: userEmail.value,
+    message: userMessage.value,
+  };
+
+  // Update and store form data on input change
+  userName.addEventListener('input', updateUserData);
+  userEmail.addEventListener('input', updateUserData);
+  userMessage.addEventListener('input', updateUserData);
+
+  // Store updated form data in localStorage
+  localStorage.setItem('userData', JSON.stringify(newUserData));
+}
