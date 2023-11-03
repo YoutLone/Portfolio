@@ -23,7 +23,6 @@ window.addEventListener('resize', () => {
   }
 });
 
-
 // End of Mobile Menu
 
 // Start of Window-popup Menu
